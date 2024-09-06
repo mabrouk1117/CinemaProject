@@ -18,8 +18,24 @@ string User::getPhone() const {
     return phone;
 }
 
+vector<Payment*> User::getPaymentMethods(){
+    return paymentMethods;
+}
+
+Payment* User::getPaymentMethod(){
+    if (!paymentMethods.empty()) {
+        return paymentMethods[0];
+    }
+    throw ("No payment methods found !");
+}
+
 void User::addPaymentMethod(Payment* paymentMethod) {
-    paymentMethods.push_back(paymentMethod);
+    if (paymentMethod != nullptr) {
+        paymentMethods.push_back(paymentMethod);
+        cout << "Payment method added successfully.\n";
+    } else {
+        cout << "Invalid payment method!\n";
+    }
 }
 
 User::~User() {

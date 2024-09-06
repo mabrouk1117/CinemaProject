@@ -6,9 +6,8 @@ using namespace std;
 
 class Payment {
 public:
-    virtual ~Payment() {}
 
-    virtual void pay(double amount);
+    virtual void pay(double amount) = 0;
 };
 
 #endif //CINEMAPROJECT_PAYMENT_H

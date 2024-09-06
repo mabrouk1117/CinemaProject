@@ -13,4 +13,4 @@ public:
     void pay(double amount) override;
 };
 
-#endif // CINEMANPROJECT_PAYMENTCREDITCARD_
+#endif // CINEMANPROJECT_PAYMENTCREDITCARD_H

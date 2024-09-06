@@ -17,7 +17,7 @@ class Show {
     Hall hall;
     string date;
     string time;
-    vector<pair<Seat , bool>>seats;
+    vector<pair<Seat* , bool>>seats;
     double price;
 public:
     double getPrice() const;
@@ -42,9 +42,9 @@ public:
 
     void setTime(const string &time);
 
-     vector<pair<Seat, bool>> &getSeats() ;
+     vector<pair<Seat*, bool>> &getSeats() ;
 
-    void setSeats(const vector<pair<Seat, bool>> &seats);
+    void setSeats(const vector<pair<Seat*, bool>> &seats);
 
     bool bookSeat(Seat seat) ;
 public:

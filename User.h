@@ -16,6 +16,8 @@ public:
     string getName() const;
     string getMail() const;
     string getPhone() const;
+    Payment* getPaymentMethod();
+    vector<Payment*> getPaymentMethods();
 
     void addPaymentMethod(Payment* paymentMethod);
 
