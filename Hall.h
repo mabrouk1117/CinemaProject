@@ -17,22 +17,22 @@ public:
 
     void setPrice(double price);
 
-    const vector<Seat> &getSeats() const;
+    const vector<Seat*> &getSeats() const;
 
     int getColumnsNum() const;
 
     void setColumnsNum(int columnsNum);
 
-    void setSeats(const vector<Seat> &seats);
+    void setSeats(const vector<Seat*> &seats);
 
 private:
     int hallNumber;
     double price;
     int columnsNum;
-    std::vector<Seat> seats;
+    std::vector<Seat*> seats;
 public:
     Hall(){}
-    Hall(const std::vector<Seat> &seats, int hallNumber, double price, int );
+    Hall(const std::vector<Seat*> &seats, int hallNumber, double price, int );
 
 };
 

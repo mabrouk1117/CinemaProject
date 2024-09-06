@@ -4,7 +4,7 @@
 
 #include "Hall.h"
 
-Hall::Hall(const std::vector<Seat> &seats, int hallNumber, double price, int cols) : seats(seats), hallNumber(hallNumber),
+Hall::Hall(const std::vector<Seat*> &seats, int hallNumber, double price, int cols) : seats(seats), hallNumber(hallNumber),
                                                                            price(price), columnsNum(cols) {}
 
 int Hall::getHallNumber() const {
@@ -23,11 +23,11 @@ void Hall::setPrice(double price) {
     Hall::price = price;
 }
 
-const vector<Seat> &Hall::getSeats() const {
+const vector<Seat*> &Hall::getSeats() const {
     return seats;
 }
 
-void Hall::setSeats(const vector<Seat> &seats) {
+void Hall::setSeats(const vector<Seat*> &seats) {
     Hall::seats = seats;
 }
 

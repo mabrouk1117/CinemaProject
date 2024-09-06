@@ -2,77 +2,54 @@
 // Created by momen on 8/31/2024.
 //
 
-#include "Show.h"
+#ifndef CINEMAPROJECT_SHOW_H
+#define CINEMAPROJECT_SHOW_H
 
-Show::Show(Hall& h, string d, string t, double DatePrice) {
-    hall =h;
-    date = d;
-    time = t ;
-    price = DatePrice + hall.getPrice();
-    vector<Seat>st = hall.getSeats();
-    for(auto seat : st){    // available
-        seats.push_back({seat, true}) ;
-    }
-    this->id = cnt++;
-}
+#include "Hall.h"
+#include "Seat.h"
 
-int Show::cnt = 0;
 
-const Hall &Show::getHall() const {
-    return hall;
-}
+#include <bits/stdc++.h>
+using namespace std;
 
-void Show::setHall(const Hall &hall) {
-    Show::hall = hall;
-}
+class Show {
+    int id;
+    Hall hall;
+    string date;
+    string time;
+    vector<pair<Seat* , bool>>seats;
+    double price;
+public:
+    double getPrice() const;
 
-const string &Show::getDate() const {
-    return date;
-}
+    void setPrice(double price);
 
-void Show::setDate(const string &date) {
-    Show::date = date;
-}
+    static int cnt;
+    Show(){}
+    int getId() const;
 
-const string &Show::getTime() const {
-    return time;
-}
+    void setId(int id);
 
-void Show::setTime(const string &time) {
-    Show::time = time;
-}
+    const Hall &getHall() const;
 
- vector<pair<Seat, bool>> &Show::getSeats()  {
-    return seats;
-}
+    void setHall(const Hall &hall);
 
-void Show::setSeats(const vector<pair<Seat, bool>> &seats) {
-    Show::seats = seats;
-}
+    const string &getDate() const;
 
-bool Show::bookSeat(Seat seat) {
-    for(auto st : seats){
-        if (st.first.getSeatNumber() == seat.getSeatNumber() ) {
-            if (st.second == 0)
-                return false;
-            st.second = 0;
-        }
-    }
-    return true ;
-}
+    void setDate(const string &date);
 
-int Show::getId() const {
-    return id;
-}
+    const string &getTime() const;
 
-void Show::setId(int id) {
-    Show::id = id;
-}
+    void setTime(const string &time);
 
-double Show::getPrice() const {
-    return price;
-}
+    vector<pair<Seat*, bool>> &getSeats() ;
 
-void Show::setPrice(double price) {
-    Show::price = price;
-}
+    void setSeats(const vector<pair<Seat*, bool>> &seats);
+
+    bool bookSeat(Seat seat) ;
+public:
+    Show(Hall& h, string d , string t, double );
+};
+
+
+#endif //CINEMAPROJECT_SHOW_H

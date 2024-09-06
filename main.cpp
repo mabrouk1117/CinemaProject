@@ -17,11 +17,11 @@ using namespace std;
 
 int main()
 {
-    vector<Seat> seats;
-    RegularSeat seat1(10.0, 1);
-    RegularSeat seat2(10.0, 2);
-    VIPSeat seat3(20.0, 3);
-    VIPSeat seat4(20.0, 4);
+    vector<Seat*> seats;
+    Seat* seat1 = new RegularSeat(10.0, 1);
+    Seat* seat2 = new RegularSeat(10.0, 2);
+    Seat* seat3 = new VIPSeat(20.0, 3);
+    Seat* seat4 = new VIPSeat(20.0, 4);
     seats.push_back(seat1);
     seats.push_back(seat2);
     seats.push_back(seat3);

@@ -5,6 +5,7 @@
 #ifndef CINEMAPROJECT_SEAT_H
 #define CINEMAPROJECT_SEAT_H
 #include <string>
+#include <iostream>
 //#include <windows.h>
 using namespace std;
 const int RED = 12 ;

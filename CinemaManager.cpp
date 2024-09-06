@@ -1,7 +1,3 @@
-//
-// Created by momen on 8/31/2024.
-//
-
 #include "CinemaManager.h"
 
 void CinemaManager::showMovies() {
@@ -31,10 +27,7 @@ void CinemaManager::showSeats(Show show) {
         if(!seats[idx].second)
             cout<<" X ";
         else{
-            Seat seat = seats[idx].first;
-            seat.getDetails() ;
+            seats[idx].first->getDetails();
         }
     }
 }
-
-
