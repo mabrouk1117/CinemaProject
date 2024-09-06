@@ -13,8 +13,6 @@
 
 using namespace std;
 
-
-
 class Cinema {
 public:
     const vector<User> &getUsers() const;
@@ -31,6 +29,15 @@ public:
 
     const vector<Hall> &getHalls() const;
 
+    void setUsers(const vector<User> &users);
+
+    void setShows(const vector<Show> &shows);
+
+    void setMovies(const vector<Movie> &movies);
+
+    void setHalls(const vector<Hall> &halls);
+
+
     void addHalls(Hall& hall);
     static Cinema* getInstance(){
         if (myCinema == nullptr)
@@ -44,6 +51,7 @@ private:
     std::vector<Movie> movies;
     static Cinema *myCinema ;
     Cinema() ;
+    ~Cinema() ;
 };
 
 

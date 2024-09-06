@@ -1,32 +1,25 @@
-//
-// Created by momen on 8/31/2024.
-//
-
 #ifndef CINEMAPROJECT_USER_H
 #define CINEMAPROJECT_USER_H
 
-#include <bits/stdc++.h>
-using namespace std;
+#include <iostream>
+#include <vector>
+#include "Payment.h"
 
 class User {
+private:
+    string name, mail, phone;
+    vector<Payment*> paymentMethods;
 
-    string name ,mail, phone;
 public:
-    User(string name , string mail, string phone){
-        this->name = name;
-        this->mail = mail;
-        this->phone = phone;
-    }
-    string getName(){
-        return name;
-    }
-    string getMail(){
-        return mail;
-    }string getPhone(){
-        return phone;
-    }
+    User(const string& name, const string& mail, const string& phone);
 
+    string getName() const;
+    string getMail() const;
+    string getPhone() const;
+
+    void addPaymentMethod(Payment* paymentMethod);
+
+    ~User();
 };
 
-
-#endif //CINEMAPROJECT_USER_H
+#endif // CINEMAPROJECT_USER_H

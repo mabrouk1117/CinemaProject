@@ -4,15 +4,14 @@
 
 #include "Seat.h"
 #include <iostream>
-#include <win
 using namespace std;
 
-
 void RegularSeat::getDetails() {
-    cout<<" "<<this->getSeatNumber()<<" ";
+    cout << "Regular Seat - Number: " << this->getSeatNumber() 
+         << ", Price: " << this->getPrice() << endl;
 }
 
-
 void VIPSeat::getDetails() {
-    cout<<" ";
+    cout << "VIP Seat - Number: " << this->getSeatNumber() 
+         << ", Price: " << this->getPrice() << endl;
 }

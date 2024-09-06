@@ -38,6 +38,22 @@ void Cinema::addMovie(Movie& movie){
     movies.push_back(movie) ;
 }
 
+void Cinema::setUsers(const vector<User> &users) {
+    Cinema::users = users;
+}
+
+void Cinema::setShows(const vector<Show> &shows) {
+    Cinema::shows = shows;
+}
+
+void Cinema::setMovies(const vector<Movie> &movies) {
+    Cinema::movies = movies;
+}
+
+void Cinema::setHalls(const vector<Hall> &halls) {
+    Cinema::halls = halls;
+}
+
 Cinema::Cinema() {
 
 }
