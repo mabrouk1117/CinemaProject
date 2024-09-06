@@ -7,7 +7,7 @@ using namespace std;
 class Payment {
 public:
 
-    virtual void pay(double amount) = 0;
+    virtual bool pay(double amount) = 0;
 };
 
 #endif //CINEMAPROJECT_PAYMENT_H

@@ -34,6 +34,8 @@ public:
 
     virtual void getDetails() {}
 
+    virtual string getSeatType() {};
+
     Seat(double price, int seatNumber) : price(price), seatNumber(seatNumber){}
 };
 
@@ -41,12 +43,14 @@ class RegularSeat : public Seat{
 public:
     RegularSeat(double price, int seatNumber) : Seat(price, seatNumber){}
     void getDetails() override;
+    string getSeatType() const;
 };
 
 class VIPSeat : public Seat{
 public:
     VIPSeat(double price, int seatNumber) : Seat(price, seatNumber){}
     void getDetails() override;
+    string getSeatType() const;
 };
 
 #endif //CINEMAPROJECT_SEAT_H

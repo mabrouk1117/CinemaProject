@@ -4,8 +4,8 @@
 
 #include "Movie.h"
 
-Movie::Movie(const std::string &name, const std::string &genre, double rating) : name(name), genre(genre),
-                                                                                 rating(rating) {}
+Movie::Movie(const std::string &name, const std::string &genre, double rating, int id) : name(name), genre(genre),
+                                                                                 rating(rating), id(id) {}
 
 const std::string &Movie::getName() const {
     return name;

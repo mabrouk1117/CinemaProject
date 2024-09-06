@@ -15,6 +15,7 @@ public:
     void showMovies() ;
     void showShows(Movie movie);
     void showSeats(Show show) ;
+    bool book(User &user);
 };
 
 

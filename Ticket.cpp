@@ -7,7 +7,7 @@
 
 Ticket::Ticket(Show show, Seat seat, double cost) {
     mySeat = seat;
-    show = myShow;
+    myShow = show;
     price = cost;
 }
 

@@ -37,8 +37,12 @@ public:
 
     void setHalls(const vector<Hall> &halls);
 
+    Movie getMovieById(int id);
+
+    Show &getShowById(int id);
 
     void addHalls(Hall& hall);
+
     static Cinema* getInstance(){
         if (myCinema == nullptr)
             myCinema = new Cinema() ;

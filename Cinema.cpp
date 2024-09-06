@@ -54,6 +54,20 @@ void Cinema::setHalls(const vector<Hall> &halls) {
     Cinema::halls = halls;
 }
 
+Movie Cinema::getMovieById(int id) {
+    for(auto movie : movies){
+        if(movie.getId() == id)
+            return movie;
+    }
+}
+
+Show &Cinema::getShowById(int id) {
+    for(auto &show : shows){
+        if(show.getId() == id)
+            return show;
+    }
+}
+
 Cinema::Cinema() {
 
 }

@@ -5,7 +5,7 @@
 #include "Show.h"
 
 Show::Show(Hall& h, string d, string t, double DatePrice) {
-    hall =h;
+    hall = h;
     date = d;
     time = t ;
     price = DatePrice + hall.getPrice();

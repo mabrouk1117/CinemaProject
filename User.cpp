@@ -21,6 +21,9 @@ string User::getPhone() const {
 vector<Payment*> User::getPaymentMethods(){
     return paymentMethods;
 }
+vector<Ticket*> User::getTickets(){
+    return tickets;
+}
 
 Payment* User::getPaymentMethod(){
     if (!paymentMethods.empty()) {
@@ -38,8 +41,13 @@ void User::addPaymentMethod(Payment* paymentMethod) {
     }
 }
 
-User::~User() {
-    for (auto paymentMethod : paymentMethods) {
-        delete paymentMethod;
+void User::addTicket(Ticket* ticket) {
+    if (ticket != nullptr) {
+        tickets.push_back(ticket);
+        cout << "Ticket added successfully.\n";
+    } else {
+        cout << "Invalid ticket!\n";
     }
 }
+
+User::~User() {}

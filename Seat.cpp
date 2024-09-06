@@ -8,6 +8,14 @@
 using namespace std;
 
 
+string RegularSeat::getSeatType() const {
+    return "Regular";
+}
+
+string VIPSeat::getSeatType() const {
+    return "VIP";
+}
+
 void RegularSeat::getDetails() {
     cout << "Regular Seat - Number: " << this->getSeatNumber()
          << ", Price: " << this->getPrice() << endl;

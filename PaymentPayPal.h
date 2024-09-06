@@ -10,7 +10,7 @@ private:
 public:
     PaymentPayPal(const string& emailAddress) : email(emailAddress) {}
 
-    void pay(double amount) override;
+    bool pay(double amount) override;
 
     string getEmail() const {
         return email;

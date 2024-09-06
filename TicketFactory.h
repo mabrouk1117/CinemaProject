@@ -9,9 +9,7 @@
 
 class TicketFactory {
 public:
-    Ticket createTicket(Show sh, VIPSeat st);
-    Ticket createTicket(Show sh, RegularSeat st);
-
+    static Ticket createTicket(Show sh, Seat* seat);
 };
 
 #endif //CINEMAPROJECT_TICKETFACTORY_H

@@ -10,7 +10,7 @@ private:
 public:
     PaymentCreditCard(const string& cardNum) : cardNumber(cardNum) {}
 
-    void pay(double amount) override;
+    bool pay(double amount) override;
 };
 
 #endif // CINEMANPROJECT_PAYMENTCREDITCARD_H

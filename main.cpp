@@ -12,6 +12,7 @@
 #include "PaymentPayPal.h"
 #include "Authentication.h"
 #include "CinemaManager.h"
+#include "TicketFactory.h"
 
 
 using namespace std;
@@ -38,11 +39,11 @@ int main()
     Show show1(hall1, "2024-08-31", "12:00", 12.5);
     Show show2(hall2, "2024-08-31", "8:00", 25);
 
-
     vector<Movie> movies;
-    Movie movie1("The Shawshank Redemption", "Drama", 9.3);
-    Movie movie2("The Godfather", "Crime", 9.2);
+    Movie movie1("The Shawshank Redemption", "Drama", 9.3, 0);
+    Movie movie2("The Godfather", "Crime", 9.2, 1);
     movie1.addShow(show1);
+    movie1.addShow(show2);
     movie2.addShow(show2);
     movies.push_back(movie1);
     movies.push_back(movie2);
@@ -61,9 +62,6 @@ int main()
     users.push_back(user2);
     users.push_back(user3);
 
-    // user1.getPaymentMethod()->pay(123);
-    user1.getPaymentMethods().back()->pay(123);
-
     Cinema* cinema = Cinema::getInstance();
     cinema->setHalls(halls);
     cinema->setMovies(movies);
@@ -72,8 +70,7 @@ int main()
 
     CinemaManager cinemaManager;
 
-    cinemaManager.showMovies();
-    cinemaManager.showShows(movie1);
-    cinemaManager.showSeats(show1);
+    cinemaManager.book(user1);
+
     return 0;
 }

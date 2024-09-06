@@ -18,7 +18,7 @@ class Movie {
     vector<Show>shows;
 public:
     Movie(){}
-    Movie(const std::string &name, const std::string &genre, double rating);
+    Movie(const std::string &name, const std::string &genre, double rating, int id);
 
     const std::string &getName() const;
 
