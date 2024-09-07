@@ -38,6 +38,8 @@ int main()
     vector<Show> shows;
     Show show1(hall1, "2024-08-31", "12:00", 12.5);
     Show show2(hall2, "2024-08-31", "8:00", 25);
+    shows.push_back(show1);
+    shows.push_back(show2);
 
     vector<Movie> movies;
     Movie movie1("The Shawshank Redemption", "Drama", 9.3, 0);

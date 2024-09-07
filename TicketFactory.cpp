@@ -12,6 +12,7 @@ Ticket TicketFactory::createTicket(Show show, Seat* seat) {
         cout<<"Enter any food you want to order, if you don't want to order any, enter 0: ";
         cin>>food;
         cout<<"enter the color you want the Ticket to be at: ";
+        cin >> color;
         return VIPTicket(show, *seat, price, food, color);
     }
     else if (seat->getSeatType() == "Regular"){

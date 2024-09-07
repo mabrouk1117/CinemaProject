@@ -34,7 +34,7 @@ public:
 
     virtual void getDetails() {}
 
-    virtual string getSeatType() {};
+    virtual string getSeatType() const {};
 
     Seat(double price, int seatNumber) : price(price), seatNumber(seatNumber){}
 };
