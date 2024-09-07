@@ -46,7 +46,7 @@ public:
 
     void setSeats(const vector<pair<Seat*, bool>> &seats);
 
-    bool bookSeat(Seat seat) ;
+    bool bookSeat(int seatNumber) ;
 public:
     Show(Hall& h, string d , string t, double );
 };
