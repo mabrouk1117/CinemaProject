@@ -57,7 +57,7 @@ bool CinemaManager::book(User &user) {
         cout << "Invalid show ID\n";
         return false;
     }
-    Show show = cinema->getShowById(showId);
+    Show& show = cinema->getShowById(showId);
     showSeats(show);
     int seatId;
     cout << "Enter the seat ID you want to book: ";
@@ -79,9 +79,10 @@ bool CinemaManager::book(User &user) {
         cout << "Payment failed\n";
         return false;
     }
-    Ticket ticket = TicketFactory::createTicket(show, show.getSeats()[seatId].first);
+    Seat* mySeat = show.getSeats()[seatId].first;
+    Ticket ticket = TicketFactory::createTicket(show, mySeat);
     user.addTicket(&ticket);
-    show.getSeats()[seatId].second = false;
+    show.bookSeat(seatId) ;
     cout << "Seat booked successfully\n";
     return true;
 }
