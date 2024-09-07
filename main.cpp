@@ -73,6 +73,14 @@ int main()
     CinemaManager cinemaManager;
 
     cinemaManager.book(user1);
+    cinemaManager.book(user1);
+    cinemaManager.book(user1);
+
+    for(auto t: user1.getTickets()){
+        cout<<t->getPrice()<<" ";
+        cout<<t->getMySeat().getSeatNumber()<<" ";
+        cout<<t->getMySeat().getSeatType()<<endl;
+    }
 
     return 0;
 }

@@ -17,11 +17,12 @@ string VIPSeat::getSeatType() const {
 }
 
 void RegularSeat::getDetails() {
-    cout << "Regular Seat - Number: " << this->getSeatNumber()
-         << ", Price: " << this->getPrice() << endl;
+    cout << "Regular Seat Number(" << this->getSeatNumber()<<")   ";
 }
 
 void VIPSeat::getDetails() {
-    cout << "VIP Seat - Number: " << this->getSeatNumber()
-         << ", Price: " << this->getPrice() << endl;
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), RED);
+    cout << "VIP Seat Number(" << this->getSeatNumber()<<")       ";
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), White);
+
 }

@@ -77,3 +77,20 @@ double Show::getPrice() const {
 void Show::setPrice(double price) {
     Show::price = price;
 }
+
+bool Show::isBooked(int seatNumber) {
+    for(auto& st : seats){
+        if (st.first->getSeatNumber() == seatNumber ) {
+            return !st.second;
+        }
+    }
+    return true;
+}
+
+Seat* Show::getSeat(int seatNumber){
+    for(auto& st : seats){
+        if (st.first->getSeatNumber() == seatNumber ) {
+            return st.first;
+        }
+    }
+}

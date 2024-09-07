@@ -5,7 +5,7 @@
 #include "Ticket.h"
 
 
-Ticket::Ticket(Show show, Seat seat, double cost) {
+Ticket::Ticket(Show show, Seat* seat, double cost) {
     mySeat = seat;
     myShow = show;
     price = cost;
@@ -20,10 +20,10 @@ void Ticket::setMyShow(const Show &myShow) {
 }
 
 const Seat &Ticket::getMySeat() const {
-    return mySeat;
+    return *mySeat;
 }
 
-void Ticket::setMySeat(const Seat &mySeat) {
+void Ticket::setMySeat( Seat *mySeat) {
     Ticket::mySeat = mySeat;
 }
 

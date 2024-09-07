@@ -4,7 +4,7 @@
 
 #include "TicketFactory.h"
 
-Ticket TicketFactory::createTicket(Show show, Seat* seat) {
+Ticket* TicketFactory::createTicket(Show show, Seat* seat) {
     double price = show.getPrice() + seat->getPrice();
     if(seat->getSeatType() == "VIP"){
         string food;
@@ -13,11 +13,11 @@ Ticket TicketFactory::createTicket(Show show, Seat* seat) {
         cin>>food;
         cout<<"enter the color you want the Ticket to be at: ";
         cin >> color;
-        return VIPTicket(show, *seat, price, food, color);
+        return new VIPTicket(show, seat, price, food, color);
     }
     else if (seat->getSeatType() == "Regular"){
         double price = show.getPrice() + seat->getPrice();
-        return Ticket(show, *seat, price);
+        return new Ticket(show, seat, price);
     }
     else{
         cout<<"Invalid Seat Type"<<endl;

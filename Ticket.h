@@ -11,10 +11,10 @@
 class Ticket {
 private:
     Show myShow;
-    Seat mySeat;
+    Seat* mySeat;
     double price;
 public:
-    Ticket(Show, Seat, double);
+    Ticket(Show, Seat*, double);
 
     const Show &getMyShow() const;
 
@@ -22,7 +22,7 @@ public:
 
     const Seat &getMySeat() const;
 
-    void setMySeat(const Seat &mySeat);
+    void setMySeat(Seat* mySeat);
 
     double getPrice() const;
 

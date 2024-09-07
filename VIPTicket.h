@@ -21,7 +21,7 @@ private:
     string food;
     string color;
 public:
-    VIPTicket(Show show, Seat seat, double cost, string food, string color);
+    VIPTicket(Show show, Seat* seat, double cost, string food, string color);
 };
 
 

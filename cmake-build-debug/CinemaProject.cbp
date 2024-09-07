@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CinemaProject"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CinemaProject">
+				<Option output="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/CinemaProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/FCAI_1/CinemaProjectGit/CinemaProject/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CinemaProject"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CinemaProject/fast">
+				<Option output="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/CinemaProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/FCAI_1/CinemaProjectGit/CinemaProject/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CinemaProject/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/FCAI_1/CinemaProjectGit/CinemaProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Authentication.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Authentication.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Cinema.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Cinema.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/CinemaManager.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/CinemaManager.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Hall.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Hall.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Movie.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Movie.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Payment.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/PaymentCreditCard.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/PaymentCreditCard.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/PaymentPayPal.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/PaymentPayPal.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Seat.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Seat.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Show.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Show.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Ticket.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/Ticket.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/TicketFactory.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/TicketFactory.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/User.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/User.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/VIPTicket.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/VIPTicket.h">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/main.cpp">
+			<Option target="CinemaProject"/>
+		</Unit>
+		<Unit filename="D:/FCAI_1/CinemaProjectGit/CinemaProject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

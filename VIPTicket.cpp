@@ -6,7 +6,7 @@
 
 #include <utility>
 
-VIPTicket::VIPTicket( Show show, Seat seat, double cost, string food, string color): Ticket(std::move(show), std::move(seat), cost){
+VIPTicket::VIPTicket( Show show, Seat* seat, double cost, string food, string color): Ticket(std::move(show), std::move(seat), cost){
     this->food = food;
     this->color = color;
 }

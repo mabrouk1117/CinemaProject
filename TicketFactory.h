@@ -9,7 +9,7 @@
 
 class TicketFactory {
 public:
-    static Ticket createTicket(Show sh, Seat* seat);
+    static Ticket* createTicket(Show sh, Seat* seat);
 };
 
 #endif //CINEMAPROJECT_TICKETFACTORY_H

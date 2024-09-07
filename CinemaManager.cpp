@@ -32,11 +32,12 @@ void CinemaManager::showSeats(Show show) {
         if (idx % show.getHall().getColumnsNum() == 0)
             cout<<endl;
         if(!seats[idx].second)
-            cout<<" X ";
+            cout<<"X                        ";
         else{
             seats[idx].first->getDetails();
         }
     }
+    cout<<endl;
 }
 
 bool CinemaManager::book(User &user) {
@@ -44,7 +45,7 @@ bool CinemaManager::book(User &user) {
     int movieId;
     cout << "Enter the movie ID you want to book: ";
     cin >> movieId;
-    if(movieId >= cinema->getMovies().size() || movieId < 0){
+    if(movieId < 0){
         cout << "Invalid movie ID\n";
         return false;
     }
@@ -53,7 +54,7 @@ bool CinemaManager::book(User &user) {
     int showId;
     cout << "Enter the show ID you want to book: ";
     cin >> showId;
-    if(showId >= movie.getShows().size() || showId < 0){
+    if(showId < 0){
         cout << "Invalid show ID\n";
         return false;
     }
@@ -62,11 +63,7 @@ bool CinemaManager::book(User &user) {
     int seatId;
     cout << "Enter the seat ID you want to book: ";
     cin >> seatId;
-    if(seatId >= show.getSeats().size() || seatId < 0){
-        cout << "Invalid seat ID\n";
-        return false;
-    }
-    if(!show.getSeats()[seatId].second){
+    if(show.isBooked(seatId)){
         cout << "Seat is already booked\n";
         return false;
     }
@@ -75,13 +72,13 @@ bool CinemaManager::book(User &user) {
         cout << "You need to add a payment method first\n";
         return false;
     }
-    if(!user.getPaymentMethods()[0]->pay(show.getPrice())){
+    Seat* mySeat = show.getSeat(seatId);
+    Ticket* ticket = TicketFactory::createTicket(show, mySeat);
+    if(!user.getPaymentMethods()[0]->pay(ticket->getPrice())){
         cout << "Payment failed\n";
         return false;
     }
-    Seat* mySeat = show.getSeats()[seatId].first;
-    Ticket ticket = TicketFactory::createTicket(show, mySeat);
-    user.addTicket(&ticket);
+    user.addTicket(ticket);
     show.bookSeat(seatId) ;
     cout << "Seat booked successfully\n";
     return true;
