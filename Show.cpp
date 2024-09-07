@@ -48,17 +48,18 @@ void Show::setTime(const string &time) {
 
 void Show::setSeats(const vector<pair<Seat*, bool>> &seats) {
     Show::seats = seats;
-}
+}    
 
-bool Show::bookSeat(Seat seat) {
-    for(auto st : seats){
-        if (st.first->getSeatNumber() == seat.getSeatNumber() ) {
+bool Show::bookSeat(int seatNumber) {
+    for(auto& st : seats){
+        if (st.first->getSeatNumber() == seatNumber ) {
             if (st.second == 0)
                 return false;
-            st.second = 0;
+            st.second = false;
+            return true ;
         }
     }
-    return true ;
+    return false;
 }
 
 int Show::getId() const {
